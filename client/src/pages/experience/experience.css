@@ -1,66 +1,62 @@
-.experience {
-  padding: 0.8rem;
+body {
+  background: #fdfbfb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
 }
 
-.experience-wrapper {
-  position: relative;
-  padding: 3.125rem 0;
-  overflow: hidden;
+.title {
+  font-size: 15em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.experience h1 {
-  text-transform: upperCase;
-  color: var(--primary-orange);
+h3 {
+  padding-top: 0.25em;
 }
 
-.experience-wrapper::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 50%;
-  margin-left: -0.0625rem;
-  width: 0.125rem;
-  height: 100%;
-  background: var(--primary-dark-grey);
-  z-index: 1;
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
 }
 
-.timeline-block {
-  width: calc(50% + 0.5rem);
-  display: flex;
-  justify-content: space-between;
-  clear: both;
+.date {
+  color: rgb(201, 251, 255);
 }
 
-.timeline-block-right {
-  float: right;
-  direction: ltr;
+#description {
+  margin: 1.5em 0 2em 0;
 }
 
-.timeline-block-left {
-  float: left;
-  direction: rtl;
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: rgb(240, 95, 11);
 }
 
-.marker {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 40%;
-  border: 0.3125rem solid var(--primary-dark);
-  background: var(--primary-orange);
-  margin-top: 0.625rem;
-  z-index: 3;
+.lichtButton {
+  background-color: #06d6a0;
 }
 
-.timeline-content {
-  width: 95%;
-  padding: 0 0.9375rem;
-  color: var(--primary-dark-grey);
-  direction: ltr;
+.lichtButton:hover {
+  background-color: #0ac593;
 }
 
-.timeline-content h3 {
-  margin-top: 0.3125rem;
-  color: var(--primary-red);
-  font-weight: 900;
+.holzButton {
+  background-color: #f9c74f;
+}
+
+.holzButton:hover {
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
 }

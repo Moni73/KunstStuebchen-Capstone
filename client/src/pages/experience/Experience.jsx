@@ -1,47 +1,61 @@
 import "./experience.css";
-import React from "react";
+import experienceElements from "./Data";
+import { ReactComponent as LichtIcon } from "./licht.svg";
+import { ReactComponent as HolzIcon } from "./holz.svg";
 
-const Experience = () => {
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
+
+function App() {
+  let lichtIconStyles = { background: "#06D6A0" };
+  let holzIconStyles = { background: "#f9c74f" };
+
   return (
-    <div className="experience">
-      <div className="d-flex justify-content-center my-5">
-        <h1>experience</h1>
-      </div>
-      <div className="container experience-wrapper">
-        <div className="timeline-block timeline-block-left">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>2019</h3>
-            <p>Gründung</p>
-          </div>
-        </div>
+    <div>
+      <h1 className="title">Timeline</h1>
+      <VerticalTimeline>
+        {experienceElements.map((element) => {
+          let isLichtIcon = element.icon === "licht";
+          let showButton =
+            element.buttonText !== undefined &&
+            element.buttonText !== null &&
+            element.buttonText !== "";
 
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>2020</h3>
-            <p>Kunst-Wettbewerb</p>
-          </div>
-        </div>
-
-        <div className="timeline-block timeline-block-left">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>2021</h3>
-            <p>Entwicklung neuer Techniken</p>
-          </div>
-        </div>
-
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>2022</h3>
-            <p>Ausstellung geplant</p>
-          </div>
-        </div>
-      </div>
+          return (
+            <VerticalTimelineElement
+              key={element.key}
+              date={element.date}
+              dateClassName="date"
+              iconStyle={isLichtIcon ? lichtIconStyles : holzIconStyles}
+              icon={isLichtIcon ? <LichtIcon /> : <HolzIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                {element.title}
+              </h3>
+              <h5 className="vertical-timeline-element-subtitle">
+                {element.location}
+              </h5>
+              <p id="description">{element.description}</p>
+              {showButton && (
+                <a
+                  className={`button ${
+                    isLichtIcon ? "lichtButton" : "holzButton"
+                  }`}
+                  href="/"
+                >
+                  {element.buttonText}
+                </a>
+              )}
+            </VerticalTimelineElement>
+          );
+        })}
+      </VerticalTimeline>
     </div>
   );
-};
+}
 
-export default Experience;
+export default App;
