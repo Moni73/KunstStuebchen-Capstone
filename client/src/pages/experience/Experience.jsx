@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Timeline</h1>
+      <h1 className="title">Termine</h1>
       <VerticalTimeline>
         {experienceElements.map((element) => {
           let isLichtIcon = element.icon === "licht";
