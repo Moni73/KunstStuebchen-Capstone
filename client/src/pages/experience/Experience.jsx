@@ -2,15 +2,13 @@ import "./experience.css";
 import experienceElements from "./Data";
 import { ReactComponent as LichtIcon } from "./licht.svg";
 import { ReactComponent as HolzIcon } from "./holz.svg";
-
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
 
-function App() {
+function Experience() {
   let lichtIconStyles = { background: "#06D6A0" };
   let holzIconStyles = { background: "#f9c74f" };
 
@@ -58,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default Experience;
