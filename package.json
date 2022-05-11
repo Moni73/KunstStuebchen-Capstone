@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Moni73/KunstStuebchen-Capstone/issues"
   },
-  "homepage": "https://github.com/Moni73/KunstStuebchen-Capstone#readme"
+  "homepage": "https://github.com/Moni73/KunstStuebchen-Capstone#readme",
+  "dependencies": {
+    "react-vertical-timeline-component": "^3.5.2"
+  }
 }
