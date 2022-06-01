@@ -20,7 +20,7 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          Was <span>erwartet</span> Sie ?
+          <span>Carpe Diem</span>
         </h2>
         <Cards>
           <Card>

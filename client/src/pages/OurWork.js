@@ -6,7 +6,6 @@ import { Link, useHistory } from "react-router-dom";
 import light from "../img/lampeorange.jpeg";
 import hexe from "../img/hexe.jpeg";
 import metall from "../img/metall.jpeg";
-import Projekt from "../pages/projekt/Projekt.jsx";
 
 import { motion } from "framer-motion";
 import {

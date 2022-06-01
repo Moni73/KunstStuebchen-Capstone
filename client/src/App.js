@@ -1,4 +1,4 @@
-//import "./App.css";
+import "./App.css";
 import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
 import AboutUs from "./pages/AboutUs";
@@ -8,8 +8,8 @@ import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-//import "bootstrap/dist/css/bootstrap.min.css";
-//import Experience from "./pages/experience/Experience.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Experience from "./pages/experience/Experience.jsx";
 import Projekt from "./pages/projekt/Projekt.jsx";
 
 function App() {
@@ -36,6 +36,9 @@ function App() {
           </Route>
           <Route path="/projekt">
             <Projekt />
+          </Route>
+          <Route path="/experience">
+            <Experience />
           </Route>
         </Switch>
       </AnimatePresence>
