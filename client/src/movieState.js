@@ -1,4 +1,3 @@
-//Import Images
 import light from "./img/lampeorange.jpeg";
 import hexe from "./img/hexe.jpeg";
 import light2 from "./img/innenansicht.jpg";
@@ -15,65 +14,33 @@ export const MovieState = () => {
       url: "/work/the-light",
       awards: [
         {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Licht",
+          description: "“Lass Dich einfangen von der Magie des Lichts”",
         },
       ],
     },
     {
-      title: "Metalldesign",
+      title: "Holz u. Stein",
       mainImg: metall,
       url: "/work/metall-design",
       secondaryImg: metall2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Der Drache",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Hier wurden 3 Techniken miteinander vereint: Holz, Stein und Metall”",
         },
       ],
     },
     {
-      title: "Die Hexe",
+      title: "Metalldesign",
       mainImg: hexe,
       url: "/work/the-hexe",
       secondaryImg: hexe2,
       awards: [
         {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Die Hexe",
+          description: "“Ein Einzelanfertigung”",
         },
       ],
     },

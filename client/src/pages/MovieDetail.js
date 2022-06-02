@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-//import { Container } from "../styles";
 import { useHistory } from "react-router-dom";
 import { MovieState } from "../movieState";
-//Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
@@ -13,7 +11,6 @@ const MovieDetail = () => {
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
-  //UseEffect
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     setMovie(currentMovie[0]);

@@ -1,9 +1,7 @@
 import React from "react";
-//Animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
-//import { Container } from "../styles";
 
 const ContactUs = () => {
   return (
@@ -25,13 +23,13 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send an email.</h2>
+            <h2>Sende eine EMail</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Social Media</h2>
+            <h2>Besuch mich auf Instagram</h2>
           </Social>
         </Hide>
       </div>

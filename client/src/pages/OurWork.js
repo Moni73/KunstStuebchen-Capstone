@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-//import { Container } from "../styles";
 import { Link, useHistory } from "react-router-dom";
-//Images
 import light from "../img/lampeorange.jpeg";
 import hexe from "../img/hexe.jpeg";
 import metall from "../img/metall.jpeg";
@@ -48,7 +46,7 @@ const OurWork = () => {
       </Movie>
 
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>Die Hexe</h2>
+        <h2>Metalldesign</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-hexe">
           <img src={hexe} alt="hexe" />
@@ -61,10 +59,10 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>Metalldesign</h2>
+        <h2>3 Techniken</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/metall-design">
-          <img src={metall} alt="Drache" />
+          <img src={metall} alt="3 Techniken" />
         </Link>
       </Movie>
       <motion.button2
@@ -75,6 +73,13 @@ const OurWork = () => {
         Mehr Bilder
       </motion.button2>
       <ScrollTop />
+      <motion.button3
+        onClick={() => {
+          history.push("/experience");
+        }}
+      >
+        Ausstellungstermine
+      </motion.button3>
     </Work>
   );
 };
@@ -118,7 +123,6 @@ const Frame1 = styled(motion.div)`
   z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
-  //background: #ff8efb;
   background: #cc0000;
 `;
 const Frame3 = styled(Frame1)`

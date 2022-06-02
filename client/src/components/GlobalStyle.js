@@ -34,9 +34,27 @@ button{
 }
 button2{
     font-weight: bold;
-    font-size: 1.1.rem;
+    font-size: 1rem;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+    border: 3px solid #23d997;
+    background: transparent;
+    color: orangered;
+    transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
+    &:hover{
+        background-color: #23d997;
+        color: white;
+    }
+}
+}
+button3{
+    font-weight: bold;
+    font-size: 1rem;
+    top: 20px;
+    left: 100px;
+    cursor: pointer;
+    padding: 1rem 1rem;
     border: 3px solid #23d997;
     background: transparent;
     color: orangered;

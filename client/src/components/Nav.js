@@ -19,7 +19,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "10%" }}
-            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/" ? "60%" : "0%" }}
           />
         </li>
         <li>
@@ -27,7 +27,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "10%" }}
-            animate={{ width: pathname === "/work" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/work" ? "60%" : "0%" }}
           />
         </li>
         <li>
@@ -35,7 +35,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "10%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/contact" ? "60%" : "0%" }}
           />
         </li>
       </ul>
@@ -52,7 +52,7 @@ const StyledNav = styled.nav`
   padding: 1rem 10rem;
   background: #282828;
   position: sticky;
-  top: 0;
+  top: 1;
   z-index: 10;
   a {
     color: white;
@@ -74,13 +74,13 @@ const StyledNav = styled.nav`
   }
   @media (max-width: 1300px) {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 0.5rem 1rem;
     #logo {
       display: inline-block;
       margin: 0rem;
     }
     ul {
-      padding: 2rem;
+      padding: 1rem;
       justify-content: space-around;
       width: 100%;
       li {
@@ -93,9 +93,9 @@ const StyledNav = styled.nav`
 const Line = styled(motion.div)`
   height: 0.3rem;
   background: #23d997;
-  width: 0%;
+  width: 10%;
   position: absolute;
-  bottom: -80%;
+  bottom: -20%;
   left: 60%;
   @media (max-width: 1300px) {
     left: 0%;

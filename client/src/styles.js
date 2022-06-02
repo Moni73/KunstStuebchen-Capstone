@@ -1,34 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const Container = styled.div`
-  max-width: 100%;
-  margin: 10% auto;
-  padding: 1vh 10vw;
-  text-align: center;
-  @media only screen and (max-width: 1300px) {
-    max-width: 70%;
-    padding: 1vh 10vw;
-  }
-  @media only screen and (max-width: 768px) {
-    max-width: 70%;
-  }
-`;
-
-/*export const Container2 = styled.div`
-  max-width: 100%;
-  margin: auto;
-  padding: 1vh 1vw;
-  text-align: center;
-  @media only screen and (min-width: 1300px) {
-    max-width: 70%;
-    padding: 1vh 10vw;
-  }
-  @media only screen and (min-width: 1300px) {
-    max-width: 70%;
-  }
-`;*/
-
 export const About = styled(motion.div)`
   min-height: 90vh;
   display: flex;
@@ -56,6 +28,7 @@ export const Description = styled.div`
     }
   }
 `;
+
 export const Image = styled.div`
   z-index: 2;
   flex: 1;
