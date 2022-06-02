@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
-
 :root {
   --primary-green: #08eb08;
   --primary-white: #ffffff;
@@ -10,8 +8,4 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-black: #000000;
-}
-
-body {
-  font-family: "Roboto Condensed" sans-serif;
 }
