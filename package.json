@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/Moni73/KunstStuebchen-Capstone#readme",
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "concurrently": "^7.2.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-vertical-timeline-component": "^3.5.2"
   }
 }
