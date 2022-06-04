@@ -1,16 +1,17 @@
 import "./App.css";
 import React from "react";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.min.css";
 import GlobalStyle from "./components/GlobalStyle";
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
 import ContactUs from "./pages/ContactUs";
-import Nav from "./components/Nav";
-import MovieDetail from "./pages/MovieDetail";
-import { Switch, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Experience from "./pages/experience/Experience.jsx";
 import Projekt from "./pages/projekt/Projekt.jsx";
+import Mail from "./pages/mail/Mail.jsx";
+import Nav from "./components/Nav";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/experience">
             <Experience />
+          </Route>
+          <Route path="/mail">
+            <Mail />
           </Route>
         </Switch>
       </AnimatePresence>

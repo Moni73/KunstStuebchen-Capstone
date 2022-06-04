@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 const ContactUs = () => {
+  let history = useHistory();
   return (
     <ContactStyle
       exit="exit"
@@ -21,10 +23,17 @@ const ContactUs = () => {
       </Title>
       <div>
         <Hide>
-          <Social variants={titleAnim}>
+          {/*<Social variants={titleAnim}>
             <Circle />
             <h2>Sende eine EMail</h2>
-          </Social>
+  </Social>*/}
+          <motion.button
+            onClick={() => {
+              history.push("/mail");
+            }}
+          >
+            Kontakt
+          </motion.button>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
