@@ -1,8 +1,8 @@
 body {
-  background: #fdfbfb;
+  background: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: rgb(53, 53, 53);
+  color: rgb(75, 70, 70);
 }
 
 .title {
@@ -16,17 +16,19 @@ h3 {
 }
 
 .vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.25em 0.5em 0 rgba(77, 72, 72, 0.25) 25,
+    0 0.4em 1.25em 0 rgba(150, 135, 135, 0.15);
   padding: 2em 3em !important;
 }
 
 .date {
-  color: rgb(201, 251, 255);
+  color: rgb(14, 28, 233);
 }
 
 #description {
-  margin: 1.5em 0 2em 0;
+  margin: 2em 1 2em 1;
+  color: rgb(238, 12, 12);
+  font-size: 1.2rem;
 }
 
 .button {
@@ -56,7 +58,13 @@ h3 {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    color: rgb(44, 44, 44);
+    color: rgb(12, 11, 11);
     margin-top: 1.5em;
   }
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: blue;
 }

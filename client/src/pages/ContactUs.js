@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
 import { useHistory } from "react-router-dom";
@@ -73,4 +73,4 @@ const Box1 = styled.div`
   background-color: transparent;
 `;
 
-export default ContactUs;
+export default ContactUs;*/

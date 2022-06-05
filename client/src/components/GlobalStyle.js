@@ -67,11 +67,11 @@ button3{
 }
 
 button4{
-    font-weight: bold;
-    font-size: 3rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 4rem 5.5rem;
-    border: 16px solid orangered;
+    padding: 2rem 2rem;
+    border: 12px solid orangered;
     background: transparent;
     color: green;
     transition: all 0.5s ease;
@@ -82,11 +82,11 @@ button4{
     }
 };
 button5{
-    font-weight: bold;
-    font-size: 3rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 4rem 4rem;
-    border: 16px solid green;
+    padding: 2rem 1rem;
+    border: 12px solid green;
     background: transparent;
     color: orangered;
     transition: all 0.5s ease;

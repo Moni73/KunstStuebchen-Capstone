@@ -6,11 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GlobalStyle from "./components/GlobalStyle";
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
-import ContactUs from "./pages/ContactUs";
+//import ContactUs from "./pages/ContactUs";
 import Experience from "./pages/experience/Experience.jsx";
 import Projekt from "./pages/projekt/Projekt.jsx";
 import Mail from "./pages/mail/Mail.jsx";
-import Insta from "./pages/Insta.jsx";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 
@@ -33,20 +32,17 @@ function App() {
           <Route path="/work/:id">
             <MovieDetail />
           </Route>
-          <Route path="/contact">
+          {/*<Route path="/contact">
             <ContactUs />
-          </Route>
+  </Route>*/}
           <Route path="/projekt">
             <Projekt />
           </Route>
           <Route path="/experience">
             <Experience />
           </Route>
-          <Route path="/mail">
+          <Route path="/contact">
             <Mail />
-          </Route>
-          <Route path="/insta">
-            <Insta />
           </Route>
         </Switch>
       </AnimatePresence>

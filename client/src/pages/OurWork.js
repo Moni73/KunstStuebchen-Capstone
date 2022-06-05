@@ -15,7 +15,6 @@ import {
   lineAnim,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -65,21 +64,30 @@ const OurWork = () => {
           <img src={metall} alt="3 Techniken" />
         </Link>
       </Movie>
-      <motion.button2
-        onClick={() => {
-          history.push("/projekt");
-        }}
-      >
-        Mehr Bilder
-      </motion.button2>
-      <ScrollTop />
-      <motion.button3
-        onClick={() => {
-          history.push("/experience");
-        }}
-      >
-        Ausstellungstermine
-      </motion.button3>
+      <Cards>
+        <Card>
+          <Hide>
+            <motion.button4
+              onClick={() => {
+                history.push("/projekt");
+              }}
+            >
+              Fotos
+            </motion.button4>
+          </Hide>
+        </Card>
+        <Card>
+          <Hide>
+            <motion.button5
+              onClick={() => {
+                history.push("/experience");
+              }}
+            >
+              Termine
+            </motion.button5>
+          </Hide>
+        </Card>
+      </Cards>
     </Work>
   );
 };
@@ -95,6 +103,7 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
+
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
@@ -112,7 +121,6 @@ const Hide = styled.div`
   overflow: hidden;
 `;
 
-//Frame Animation
 const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
@@ -132,4 +140,14 @@ const Frame4 = styled(Frame1)`
   background: #ff7600;
 `;
 
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
+`;
+const Card = styled.div`
+  flex-basis: 12rem;
+`;
 export default OurWork;
