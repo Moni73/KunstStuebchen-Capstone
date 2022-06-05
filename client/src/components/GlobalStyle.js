@@ -65,6 +65,23 @@ button3{
         color: white;
     }
 }
+
+button4{
+    font-weight: bold;
+    font-size: 4rem;
+    cursor: pointer;
+    padding: 4rem 4rem;
+    border: 16px solid orangered;
+    //background: transparent;
+    color: orangered;
+    transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
+    &:hover{
+        background-color: orangered;
+        color: black;
+    }
+}
+
     h2{
         font-weight: lighter;
         font-size: 3rem;

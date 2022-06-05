@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import Experience from "./pages/experience/Experience.jsx";
 import Projekt from "./pages/projekt/Projekt.jsx";
 import Mail from "./pages/mail/Mail.jsx";
+import Insta from "./pages/Insta.jsx";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/mail">
             <Mail />
+          </Route>
+          <Route path="/insta">
+            <Insta />
           </Route>
         </Switch>
       </AnimatePresence>

@@ -27,19 +27,29 @@ const ContactUs = () => {
             <Circle />
             <h2>Sende eine EMail</h2>
   </Social>*/}
-          <motion.button
+
+          <motion.button4
             onClick={() => {
               history.push("/mail");
             }}
           >
             Kontakt
-          </motion.button>
+          </motion.button4>
         </Hide>
+
         <Hide>
-          <Social variants={titleAnim}>
+          <motion.button4
+            onClick={() => {
+              history.push("/insta");
+            }}
+          >
+            Instagram
+          </motion.button4>
+
+          {/*<Social variants={titleAnim}>
             <Circle />
             <h2>Besuch mich auf Instagram</h2>
-          </Social>
+          </Social>*/}
         </Hide>
       </div>
     </ContactStyle>
