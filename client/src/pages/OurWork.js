@@ -97,11 +97,7 @@ const OurWork = () => {
         </Card>
       </Cards>
       <ScrollToTop />
-      <div>
-        <ul>
-          <li onClick={() => scrollToSection(work)} className="link"></li>
-        </ul>
-      </div>
+      <div onClick={() => scrollToSection(work)} className="link"></div>
     </Work>
   );
 };

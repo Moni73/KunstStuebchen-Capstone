@@ -29,11 +29,7 @@ const AboutUs = () => {
       <FaqSection />
       <ScrollTop />
       <ScrollToTop />
-      <div>
-        <ul>
-          <li onClick={() => scrollToSection(About)} className="link"></li>
-        </ul>
-      </div>
+      <div onClick={() => scrollToSection(About)} className="link"></div>
     </motion.div>
   );
 };
