@@ -17,17 +17,12 @@ const ContactUs = () => {
       <Title>
         <Hide>
           <motion.h2 variants={titleAnim}>
-            Nimm gerne Kontakt zu mir auf{" "}
+            Nimm gerne Kontakt zu mir auf
           </motion.h2>
         </Hide>
       </Title>
-      <div>
+      <Box1>
         <Hide>
-          {/*<Social variants={titleAnim}>
-            <Circle />
-            <h2>Sende eine EMail</h2>
-  </Social>*/}
-
           <motion.button4
             onClick={() => {
               history.push("/mail");
@@ -36,22 +31,18 @@ const ContactUs = () => {
             Kontakt
           </motion.button4>
         </Hide>
-
+      </Box1>
+      <Box1>
         <Hide>
-          <motion.button4
+          <motion.button5
             onClick={() => {
               history.push("/insta");
             }}
           >
             Instagram
-          </motion.button4>
-
-          {/*<Social variants={titleAnim}>
-            <Circle />
-            <h2>Besuch mich auf Instagram</h2>
-          </Social>*/}
+          </motion.button5>
         </Hide>
-      </div>
+      </Box1>
     </ContactStyle>
   );
 };
@@ -75,18 +66,11 @@ const Title = styled.div`
 const Hide = styled.div`
   overflow: hidden;
 `;
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: orangered;
-`;
-const Social = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  h2 {
-    margin: 2rem;
-  }
+
+const Box1 = styled.div`
+  width: 500px;
+  height: 150px;
+  background-color: transparent;
 `;
 
 export default ContactUs;

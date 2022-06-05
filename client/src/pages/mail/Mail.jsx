@@ -41,7 +41,7 @@ const Mail = () => {
     <div className="contacts">
       <div className="text-center">
         <h1>Kontaktiere mich</h1>
-        <p>Bitte teile mir kurz mit, um was es geht ! Danke !</p>
+        <p>Danke !</p>
       </div>
       <div className="container">
         <form onSubmit={sendMail}>

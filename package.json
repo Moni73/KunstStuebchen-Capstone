@@ -28,6 +28,7 @@
     "concurrently": "^7.2.1",
     "react-instagram-embed": "^3.0.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-typed": "^1.2.0",
     "react-vertical-timeline-component": "^3.5.2"
   }
 }

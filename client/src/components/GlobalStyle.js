@@ -68,19 +68,34 @@ button3{
 
 button4{
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     cursor: pointer;
-    padding: 4rem 4rem;
+    padding: 4rem 5.5rem;
     border: 16px solid orangered;
-    //background: transparent;
-    color: orangered;
+    background: transparent;
+    color: green;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
     &:hover{
         background-color: orangered;
-        color: black;
+        color: white;
     }
-}
+};
+button5{
+    font-weight: bold;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 4rem 4rem;
+    border: 16px solid green;
+    background: transparent;
+    color: orangered;
+    transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
+    &:hover{
+        background-color: green;
+        color: white;
+    }
+};
 
     h2{
         font-weight: lighter;
@@ -107,6 +122,7 @@ button4{
         font-size: 1.4rem;
         line-height: 150%;
     }
+   
 `;
 
 export default GlobalStyle;
