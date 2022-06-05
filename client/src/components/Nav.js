@@ -19,7 +19,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "10%" }}
-            animate={{ width: pathname === "/" ? "60%" : "0%" }}
+            animate={{ width: pathname === "/" ? "100%" : "0%" }}
           />
         </li>
         <li>
@@ -27,7 +27,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "10%" }}
-            animate={{ width: pathname === "/work" ? "60%" : "0%" }}
+            animate={{ width: pathname === "/work" ? "100%" : "0%" }}
           />
         </li>
         <li>
@@ -35,7 +35,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "10%" }}
-            animate={{ width: pathname === "/contact" ? "60%" : "0%" }}
+            animate={{ width: pathname === "/contact" ? "100%" : "0%" }}
           />
         </li>
       </ul>
@@ -52,7 +52,7 @@ const StyledNav = styled.nav`
   padding: 1rem 10rem;
   background: #282828;
   position: sticky;
-  top: 1;
+  top: 0;
   z-index: 10;
   a {
     color: white;

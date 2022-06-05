@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd api && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "install:all": "npm install && cd client && npm install && cd ../api && npm install",
+    "heroku-postbuild": "cd api && npm install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +24,10 @@
   },
   "homepage": "https://github.com/Moni73/KunstStuebchen-Capstone#readme",
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "concurrently": "^7.2.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-typed": "^1.2.0",
     "react-vertical-timeline-component": "^3.5.2"
   }
 }

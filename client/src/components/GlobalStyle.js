@@ -65,6 +65,38 @@ button3{
         color: white;
     }
 }
+
+button4{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 2rem 2rem;
+    border: 12px solid orangered;
+    background: transparent;
+    color: green;
+    transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
+    &:hover{
+        background-color: orangered;
+        color: white;
+    }
+};
+button5{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 2rem 1rem;
+    border: 12px solid green;
+    background: transparent;
+    color: orangered;
+    transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
+    &:hover{
+        background-color: green;
+        color: white;
+    }
+};
+
     h2{
         font-weight: lighter;
         font-size: 3rem;
@@ -90,6 +122,7 @@ button3{
         font-size: 1.4rem;
         line-height: 150%;
     }
+   
 `;
 
 export default GlobalStyle;
