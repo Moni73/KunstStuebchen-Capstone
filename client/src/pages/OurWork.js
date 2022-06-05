@@ -1,9 +1,10 @@
-import React from "react";
+import { useRef } from "react";
 import styled from "styled-components";
 import { Link, useHistory } from "react-router-dom";
 import light from "../img/lampeorange.jpeg";
 import hexe from "../img/hexe.jpeg";
 import metall from "../img/metall.jpeg";
+import ScrollToTop from "../pages/scroll/ScrollToTop.js";
 
 import { motion } from "framer-motion";
 import {
@@ -20,6 +21,13 @@ const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   let history = useHistory();
+  const work = useRef(null);
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     <Work
       style={{ background: "#fff" }}
@@ -88,6 +96,12 @@ const OurWork = () => {
           </Hide>
         </Card>
       </Cards>
+      <ScrollToTop />
+      <div>
+        <ul>
+          <li onClick={() => scrollToSection(work)} className="link"></li>
+        </ul>
+      </div>
     </Work>
   );
 };
