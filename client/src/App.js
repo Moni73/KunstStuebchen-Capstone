@@ -32,9 +32,6 @@ function App() {
           <Route path="/work/:id">
             <MovieDetail />
           </Route>
-          {/*<Route path="/contact">
-            <ContactUs />
-  </Route>*/}
           <Route path="/projekt">
             <Projekt />
           </Route>
