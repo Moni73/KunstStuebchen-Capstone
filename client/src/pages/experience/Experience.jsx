@@ -7,11 +7,19 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import React, { useRef } from "react";
+import ScrollToTop from "../scroll/ScrollToTop.js";
 
 function Experience() {
   let lichtIconStyles = { background: "#06D6A0" };
   let holzIconStyles = { background: "#f9c74f" };
-
+  const dates = useRef(null);
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <h1 className="title">Termine</h1>
@@ -52,6 +60,8 @@ function Experience() {
           );
         })}
       </VerticalTimeline>
+      <ScrollToTop />
+      <div onClick={() => scrollToSection(dates)} className="link"></div>
     </div>
   );
 }
