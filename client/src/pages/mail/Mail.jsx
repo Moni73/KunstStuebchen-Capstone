@@ -40,8 +40,8 @@ const Mail = () => {
   return (
     <div className="contacts">
       <div className="text-center">
+        <p></p>
         <h1>Kontaktiere mich</h1>
-        <p>Danke !</p>
       </div>
       <div className="container">
         <form onSubmit={sendMail}>

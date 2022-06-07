@@ -1,11 +1,20 @@
 import "./projekt.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { getImages, searchImages } from "./api";
+import ScrollToTop from "../scroll/ScrollToTop.js";
 
 const Projekt = () => {
   const [imageList, setImageList] = useState([]);
   const [nextCursor, setNextCursor] = useState(null);
   const [searchValue, setSearchValue] = useState("");
+
+  const picture = useRef(null);
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -66,6 +75,8 @@ const Projekt = () => {
           <button onClick={handleLoadMoreButtonClick}>Weitere Fotos</button>
         )}
       </div>
+      <ScrollToTop />
+      <div onClick={() => scrollToSection(picture)} className="link"></div>
     </>
   );
 };
