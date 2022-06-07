@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GlobalStyle from "./components/GlobalStyle";
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
-//import ContactUs from "./pages/ContactUs";
 import Experience from "./pages/experience/Experience.jsx";
 import Projekt from "./pages/projekt/Projekt.jsx";
 import Mail from "./pages/mail/Mail.jsx";
@@ -19,7 +18,6 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>

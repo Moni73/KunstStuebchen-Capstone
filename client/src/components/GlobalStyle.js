@@ -10,10 +10,10 @@ html{
     @media (max-width: 1300px){
         font-size: 75%;
     }
-    
+
 }
 body{
-    background: #1b1b1b;
+    background: black;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
@@ -47,7 +47,6 @@ button2{
         color: white;
     }
 }
-}
 button3{
     font-weight: bold;
     font-size: 1rem;
@@ -65,7 +64,6 @@ button3{
         color: white;
     }
 }
-
 button4{
     font-weight: bolder;
     font-size: 1.5rem;
@@ -80,7 +78,7 @@ button4{
         background-color: orangered;
         color: white;
     }
-};
+}
 button5{
     font-weight: bolder;
     font-size: 1.5rem;
@@ -95,8 +93,7 @@ button5{
         background-color: green;
         color: white;
     }
-};
-
+}
     h2{
         font-weight: lighter;
         font-size: 3rem;
@@ -107,7 +104,6 @@ button5{
     h4{
         font-weight: bold;
         font-size: 2rem;
-       
     }
     a{
         font-size: 1.1rem;
@@ -122,7 +118,6 @@ button5{
         font-size: 1.4rem;
         line-height: 150%;
     }
-   
 `;
 
 export default GlobalStyle;
